@@ -72,20 +72,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Subze — Market Intelligence Trading Terminal" },
+      {
+        name: "description",
+        content:
+          "Subze is a modern market intelligence trading terminal with live crypto prices, real-time charts, and an AI copilot for traders.",
+      },
+      { name: "author", content: "Subze" },
+      { property: "og:title", content: "Subze — Market Intelligence Trading Terminal" },
+      {
+        property: "og:description",
+        content:
+          "Live crypto prices, real-time charts, and an AI copilot — built for modern traders.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: "/favicon.png" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Subze — Market Intelligence Trading Terminal" },
+      { name: "twitter:description", content: "Live crypto prices and an AI trading copilot." },
+      { name: "twitter:image", content: "/favicon.png" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
     ],
   }),
   shellComponent: RootShell,
