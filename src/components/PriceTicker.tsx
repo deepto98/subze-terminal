@@ -83,7 +83,7 @@ export function PriceTicker() {
     <header className="sticky top-0 z-50 glass-strong border-b border-border">
       <div className="flex items-center gap-6 px-6 py-3">
         <div className="flex items-center gap-2 shrink-0">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[oklch(0.86_0.24_145)] to-[oklch(0.78_0.2_175)] grid place-items-center glow-green">
+          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[oklch(0.72_0.17_30)] to-[oklch(0.7_0.16_15)] grid place-items-center glow-green">
             <Activity className="h-4 w-4 text-background" strokeWidth={2.5} />
           </div>
           <div className="leading-tight">
@@ -126,7 +126,7 @@ export function PriceTicker() {
         <div className="hidden sm:flex items-center gap-2 shrink-0">
           <span
             className={`h-2 w-2 rounded-full ${
-              connected ? "bg-[var(--neon-green)] animate-glow-pulse" : "bg-muted-foreground/50"
+              connected ? "bg-[var(--brand)] animate-glow-pulse" : "bg-muted-foreground/50"
             }`}
           />
           <span className="text-xs text-muted-foreground">
