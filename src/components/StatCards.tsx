@@ -3,7 +3,7 @@ import { TrendingDown, TrendingUp, Waves, BarChart3 } from "lucide-react";
 const stats = [
   { label: "24h Min", value: "$66,108.42", icon: TrendingDown, accent: "text-neon-red" },
   { label: "24h Max", value: "$68,902.10", icon: TrendingUp, accent: "text-neon-green" },
-  { label: "Volatility", value: "2.41%", icon: Waves, accent: "text-[var(--neon-cyan)]" },
+  { label: "Volatility", value: "2.41%", icon: Waves, accent: "text-[var(--brand)]" },
   { label: "Volume", value: "$28.4B", icon: BarChart3, accent: "text-foreground" },
 ];
 
