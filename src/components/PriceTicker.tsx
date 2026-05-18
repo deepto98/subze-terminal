@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowDown, ArrowUp, Activity } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
+import subzeLogo from "@/assets/subze-logo.png";
 
 type Tick = { symbol: string; price: number; change?: number };
 
@@ -83,9 +84,11 @@ export function PriceTicker() {
     <header className="sticky top-0 z-50 glass-strong border-b border-border">
       <div className="flex items-center gap-6 px-6 py-3">
         <div className="flex items-center gap-2 shrink-0">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[oklch(0.72_0.17_30)] to-[oklch(0.7_0.16_15)] grid place-items-center glow-green">
-            <Activity className="h-4 w-4 text-background" strokeWidth={2.5} />
-          </div>
+          <img
+            src={subzeLogo}
+            alt="Subze logo"
+            className="h-9 w-9 rounded-lg object-cover shadow-sm"
+          />
           <div className="leading-tight">
             <div className="font-semibold tracking-tight">Subze</div>
             <div className="text-[10px] text-muted-foreground uppercase tracking-widest">

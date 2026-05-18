@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Send, Sparkles, Bot, User } from "lucide-react";
+import { Send, Bot, User } from "lucide-react";
+import subzeLogo from "@/assets/subze-logo.png";
 
 type Msg = { id: string; role: "user" | "assistant"; content: string };
 
@@ -60,9 +61,7 @@ export function AICopilot() {
   return (
     <div className="glass rounded-2xl flex flex-col h-[640px] lg:h-full lg:min-h-[640px] overflow-hidden">
       <div className="flex items-center gap-2 px-5 py-4 border-b border-border">
-        <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[oklch(0.72_0.17_30)] to-[oklch(0.75_0.14_350)] grid place-items-center">
-          <Sparkles className="h-4 w-4 text-background" strokeWidth={2.5} />
-        </div>
+        <img src={subzeLogo} alt="Subze" className="h-8 w-8 rounded-lg object-cover" />
         <div className="leading-tight">
           <div className="text-sm font-semibold">Market Copilot</div>
           <div className="text-[10px] uppercase tracking-widest text-muted-foreground">
